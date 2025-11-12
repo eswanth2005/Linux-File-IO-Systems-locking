@@ -20,8 +20,10 @@ Execute the C Program for the desired output.
 # PROGRAM:
 
 ## 1.To Write a C program that illustrates files copying 
-```c
-include <sys/stat.h>
+
+```
+#include <unistd.h>
+#include <sys/stat.h>
 #include <fcntl.h>
 #include <stdlib.h>
 int main()
@@ -34,15 +36,14 @@ out = open("file.out", O_WRONLY|O_CREAT, S_IRUSR|S_IWUSR);
 while((nread = read(in,block,sizeof(block))) > 0)
 write(out,block,nread);
 exit(0);}
+
 ```
 
 
-
-
-
-
 ## 2.To Write a C program that illustrates files locking
-```c
+
+```
+//C program that illustrates files locking goes here
 #include <fcntl.h>
 #include <stdio.h>
 #include <string.h>
@@ -84,14 +85,19 @@ return 0;
 ```
 
 
-
 ## OUTPUT
-## 1.To Write a C program that illustrates files copying 
 
-![image](https://github.com/user-attachments/assets/acd2dc9c-6b1e-46bb-9bc7-f8b8138a9106)
+# filecopy.o
 
-## 2.To Write a C program that illustrates files locking
-![image](https://github.com/user-attachments/assets/e28141d6-03f9-4b7b-a145-dfdb03047cfa)
+<img width="1044" height="196" alt="image" src="https://github.com/user-attachments/assets/cc420756-6dd5-4401-b68c-1c6a92866aea" />
+
+
+
+
+# lock.o
+
+<img width="785" height="930" alt="image" src="https://github.com/user-attachments/assets/c05391f6-2f2f-4aaf-b8aa-0260b322aac3" />
+
 
 
 
